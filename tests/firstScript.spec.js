@@ -1,6 +1,6 @@
-const { By, Builder, Browser } = require("selenium-webdriver");
-const assert = require("assert");
-
+import { Builder, Browser, By } from "selenium-webdriver";
+import "chromedriver";
+import assert from "assert";
 (async function firstTest() {
   let driver;
 

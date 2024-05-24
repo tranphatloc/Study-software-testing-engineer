@@ -1,6 +1,6 @@
-const { Builder, Browser, By } = require("selenium-webdriver");
-require("chromedriver");
-const assert = require("assert");
+import { Builder, Browser, By } from "selenium-webdriver";
+import "chromedriver";
+import assert from "assert";
 
 (async function addRemoveE() {
   let driver;

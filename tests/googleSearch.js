@@ -1,5 +1,5 @@
-const { Builder, By, Key, until } = require("selenium-webdriver");
-require("chromedriver");
+import { Builder, Browser, By } from "selenium-webdriver";
+import "chromedriver";
 
 (async function example() {
   let driver = await new Builder().forBrowser("chrome").build();
