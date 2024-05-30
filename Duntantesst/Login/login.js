@@ -23,12 +23,14 @@ describe("Duntan login", function () {
     expect(title).to.equal("Login | Duntan Studio");
   });
 
-    it("should enter text", async () => {
-      let textInput = await driver.findElement(By.id("destination"));
-      await textInput.sendKeys("Tran phat Loc");
-    });
-  //   it("should enter password", async () => {
-  //     let password = await driver.findElement(By.name("my-password"));
-  //     await password.sendKeys("Tpl.22062001");
-  //   });
+  it("should enter text", async () => {
+    let textInput = await driver.findElement(By.id("destination"));
+    await textInput.sendKeys("Tran phat Loc");
+  });
+  it("should enter password", async () => {
+    let submitButton = await driver.findElement(
+      By.xpath("//button[text()='Đăng nhập']")
+    );
+    await submitButton.click();
+  });
 });
